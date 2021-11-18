@@ -175,9 +175,16 @@ body{
         width: 90%;
     }
     .button{
+        background-color: rgba(17, 148, 255, 0.7);
         border-radius: 10px;
+        box-shadow: 0px 30px 0px white;
+    }
+    .bg_button:hover{
+        background-size: 130%;
+        outline: 0px solid rgb(14, 108, 185);
     }
     .bg_button{
+        margin: 0px;
         background-image: none;
     }
 }
@@ -204,10 +211,16 @@ body{
         width: 90%;
     }
     .button{
+        background-color: rgba(17, 148, 255, 0.7);
         border-radius: 10px;
-        outline: 5px solid white;
+        box-shadow: 0px 34px 0px white;
+    }
+    .bg_button:hover{
+        background-size: 130%;
+        outline: 0px solid rgb(14, 108, 185);
     }
     .bg_button{
+        margin: 0px;
         background-image: none;
     }
 } 
