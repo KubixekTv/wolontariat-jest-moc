@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 body{
     user-select: none;
@@ -23,6 +23,7 @@ body{
     background-color: rgb(17, 148, 255);
     color: white;
     box-shadow: 0px 0px 10px black;
+    margin-bottom: 20px;
 }
 #theme_mode{
     outline: 0px solid black;
@@ -55,17 +56,63 @@ body{
     background-color: black;
 }
 
+/*Buttons Grid*/
+
+.buttons_grid{
+    font-size: 20px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 600px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    background-color: rgb(17, 148, 255);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+    transition: 0.3s;
+}
+.bg_button{
+    background-size: 110%;
+    background-position: center;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.bg_button:hover{
+    background-size: 130%;
+}
+.bg_button:hover .button{
+    background-color: rgb(14, 108, 185);
+}
+
 /*Content*/
 
 .content{
+    font-weight: 300;
     text-align: justify;
     padding: 20px;
     margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
     width: 50%;
     box-shadow: 0px 0px 10px black;
+}
+
+/*Footer*/
+
+.footer{
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(17, 148, 255);
+    padding: 10px;
+    color: white;
 }
 
 /*Responsive Website*/
@@ -76,7 +123,7 @@ body{
     }
     .header{
         font-size: 30px;
-        padding: 16px 5%;
+        padding: 10px 5%;
     }
     #theme_mode{
         height: 60px;
@@ -93,7 +140,7 @@ body{
     }
     .header{
         font-size: 25px;
-        padding: 13px 5%;
+        padding: 10px 5%;
     }
     #theme_mode{
         height: 60px;
@@ -119,6 +166,18 @@ body{
         font-size: 25px;
         padding: 17px 17px 17px 17px;
     }
+    .buttons_grid{
+        font-size: 20px;
+        grid-template-columns: 1fr;
+        height: 660px;
+        width: 90%;
+    }
+    .button{
+        border-radius: 10px;
+    }
+    .bg_button{
+        background-image: none;
+    }
 }
 
 @media (max-width: 425px) { 
@@ -135,5 +194,18 @@ body{
     .header_button{
         font-size: 20px;
         padding: 15px 15px 15px 15px;
+    }
+    .buttons_grid{
+        font-size: 20px;
+        grid-template-columns: 1fr;
+        height: 700px;
+        width: 90%;
+    }
+    .button{
+        border-radius: 10px;
+        outline: 5px solid white;
+    }
+    .bg_button{
+        background-image: none;
     }
 } 
