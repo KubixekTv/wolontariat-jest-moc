@@ -69,11 +69,12 @@ body{
     margin-right: auto;
 }
 .button{
-    background-color: rgb(17, 148, 255);
+    background-color: rgba(17, 148, 255, 0.9);
     color: white;
     border-radius: 10px 10px 0px 0px;
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
     transition: 0.3s;
+    backdrop-filter: grayscale(1);
 }
 .bg_button{
     background-size: 110%;
@@ -85,6 +86,7 @@ body{
 }
 .bg_button:hover{
     background-size: 130%;
+    outline: 5px solid rgb(14, 108, 185);
 }
 .bg_button:hover .button{
     background-color: rgb(14, 108, 185);
