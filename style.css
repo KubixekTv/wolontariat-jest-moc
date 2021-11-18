@@ -13,7 +13,7 @@ body{
 
 /*Header*/
 
-header{
+.header{
     font-size: 30px;
     display: flex;
     justify-content: space-between;

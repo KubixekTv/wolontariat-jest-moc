@@ -6,14 +6,39 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <span>
-                <img src="images/dark_mode.svg" id="theme_mode">
+        <header id="header" class="header">
+            <span id="theme_change">
+                <img src="images/dark_mode.svg" id="theme_mode" onclick="theme_color()">
             </span>
             
-            <b>Wolontariat<br>"Jest Moc!"</b>
+            <b>Szkolny klub wolontariuszy<br>"Jest Moc!"</b>
 
             <a href="#" class="header_button">O&nbsp;nas</a>
         </header>
+
+        <div class="content" id="content">
+
+        </div>
+
+        <script>
+            var theme = 0;
+
+            function theme_color(){
+                if(theme==0){
+                    theme = 1;
+                    document.getElementById("theme_change").innerHTML = "<img src=\"images/light_mode.svg\" id=\"theme_mode\" onclick=\"theme_color()\">";
+
+                    document.getElementById("header").style.backgroundColor = "rgb(44,44,44)";
+                    document.body.style.backgroundColor = "rgb(22,22,22)";
+                }
+                else{
+                    theme = 0;
+                    document.getElementById("theme_change").innerHTML = "<img src=\"images/dark_mode.svg\" id=\"theme_mode\" onclick=\"theme_color()\">";
+
+                    document.getElementById("header").style.backgroundColor = "rgb(17, 148, 255)";
+                    document.body.style.backgroundColor = "rgb(255,255,255)";
+                }
+            }
+        </script>
     </body>
 </html>
