@@ -68,6 +68,8 @@ body{
     box-shadow: 0px 0px 10px black;
 }
 
+/*Responsive Website*/
+
 @media (min-width: 1024px) { 
     .content{
         width: 50%;
