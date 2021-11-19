@@ -15,7 +15,7 @@ body{
 /*Header*/
 
 .header{
-    z-index: 1;
+    z-index: 2;
     top: 0;
     position: sticky;
     font-size: 30px;
@@ -90,7 +90,9 @@ body{
     transition: 0.3s;
 }
 .bg_button:hover{
-    background-size: 130%;
+    z-index: 1;
+    transform: scale(1.03);
+    background-size: 120%;
     outline: 5px solid rgb(14, 108, 185);
 }
 .bg_button:hover .button{
@@ -108,7 +110,7 @@ body{
     transition: all 0.3s;
 }
 .sub_button:hover{
-    letter-spacing: 3px;
+    padding-left: 15px;
 }
 
 /*Content*/
@@ -138,6 +140,7 @@ body{
 }
 
 /*Responsive Website*/
+
 
 @media (min-width: 1024px) { 
     .content{
@@ -170,9 +173,6 @@ body{
     .header_button{
         font-size: 25px;
         padding: 17px 17px 17px 17px;
-    }
-    .sub_button{
-        display: none;
     }
     .sub_button{
         display: none;
@@ -217,9 +217,6 @@ body{
         text-align: center;
         background-image: none;
         height: 70px;
-    }
-    .sub_button{
-        display: none;
     }
     .sub_button{
         display: none;
