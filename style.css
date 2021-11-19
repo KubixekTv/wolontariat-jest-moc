@@ -80,6 +80,7 @@ body{
     backdrop-filter: grayscale(1);
 }
 .bg_button{
+    height: 190px;
     background-size: 110%;
     background-position: center;
     cursor: pointer;
@@ -94,10 +95,25 @@ body{
 .bg_button:hover .button{
     background-color: rgb(14, 108, 185);
 }
+.bg_button:hover .sub_button{
+    display: block;
+}
+.sub_button{
+    display: none;
+    padding: 5px;
+    color: white;
+    background-color: rgba(17, 148, 255, 0.7);
+    transition: all 0.3s;
+}
+.sub_button:hover{
+    letter-spacing: 3px;
+    background-color: rgba(14, 108, 185, 0.9)
+}
 
 /*Content*/
 
 .content{
+    user-select: text;
     font-weight: 300;
     text-align: justify;
     padding: 20px;
@@ -154,6 +170,15 @@ body{
         font-size: 25px;
         padding: 17px 17px 17px 17px;
     }
+    .sub_button{
+        display: none;
+    }
+    .sub_button{
+        display: none;
+    }
+    .bg_button:hover .sub_button{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 425px) { 
@@ -192,6 +217,15 @@ body{
         background-image: none;
         height: 70px;
     }
+    .sub_button{
+        display: none;
+    }
+    .sub_button{
+        display: none;
+    }
+    .bg_button:hover .sub_button{
+        display: none;
+    }
 }
 
 @media (max-width: 425px) { 
@@ -229,5 +263,11 @@ body{
         text-align: center;
         height: 70px;
         background-image: none;
+    }
+    .sub_button{
+        display: none;
+    }
+    .bg_button:hover .sub_button{
+        display: none;
     }
 } 
