@@ -91,7 +91,6 @@ body{
 }
 .bg_button:hover{
     z-index: 1;
-    transform: scale(1.03);
     background-size: 120%;
     outline: 5px solid rgb(14, 108, 185);
 }
@@ -99,18 +98,22 @@ body{
     background-color: rgb(14, 108, 185);
 }
 .bg_button:hover .sub_button{
+    backdrop-filter: grayscale(1);
     color: rgba(255, 255, 255, 1);
     background-color: rgba(17, 148, 255, 0.7);
 }
 .sub_button{
+    border-radius: 15px 0px 0px 15px;
+    margin-left: 3px;
     margin-top: 2px;
     padding: 5px;
     color: rgba(255, 255, 255, 0);
     background-color: rgba(17, 148, 255, 0);
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 .sub_button:hover{
-    padding-left: 15px;
+    margin-left: 15px;
+    border-radius: 20px 0px 0px 20px;
 }
 
 /*Content*/
